@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cart || Ebit Fashion</title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="lib/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/meanmenu.min.css"/>
+    <link rel="stylesheet" href="css/responsive.css"/>
+    <link rel="shortcut icon" href="images/favicon.png" />
+  </head>
+  <body>
+	<header>
+		<div class="container">
+			<div class="header_top">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="header_top_left float-left">
+							<ul class="social_icon">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+							<ul class="social_others">
+								<li><a><i class="fa fa-phone"></i>+8801711223344</a></li>
+								<li><a href="#"><i class="fa fa-envelope-o"></i>ebitfashion@domain.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="header_top_right text-right">
+							<ul>
+								<li><a href="#">Cuenta</a></li>
+								<li><a href="#">Mi lista de deseos</a></li>
+								<li><a href="#">Fabian Cristancho</a></li>
+								<li class="searchbox">
+									<input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+									<input type="submit" class="searchbox-submit" value="">
+									<span class="searchbox-icon"><i class="fa fa-search"></i></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="container">
+				<div class="row mega_relative">
+					<div class="col-xs-12 col-sm-2">
+						<div class="logo head_lo">
+							<a href="index.html"><h1 class="align-text: center;">EBIT FASHION</h1></a>
+						</div>
+					</div>
+					<div class="col-sm-10">
+						<div class="mainmenu float-right">
+							<nav>
+								<ul>
+									<li><a href="index.html">HOME</a></li>
+									<li><a href="#">NUEVO</i></a></li>
+									<li><a href="#">CARACTERÍSTICA</a></li>
+									<li><a href="#">BLOG</a></li>
+									<li><a href="#">MARCA</a></li>
+									<li><a href="#">OFERTAS</a></li>
+									<li><a href="#">CONTACTO</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+	</header>
+	<div class="mobile-menu-area">
+		<div class="container">
+			<div class="mobile-menu">
+				<nav id="dropdown">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#">NEW</a></li>
+						<li><a href="#">FEATURED</a></li>
+						<li><a href="#">BLOG</a></li>
+						<li><a href="#">BRAND</a></li>
+						<li><a href="#">OFFERS</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<div class="cart-page-content page-section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="cart_title">
+						<h4>Mi carrito de Compras</h4>
+					</div>
+					<div class="table-responsive">
+						<table class="cart-table text-center">
+							<thead>
+								<tr id="cart_th">
+									<th>#</th>
+									<th>Imagen</th>
+									<th>Nombre del Producto</th>
+									<th>Cantidad</th>
+									<th>Precio Unitario ($)</th>
+									<th>Total ($)</th>
+									<th>Eliminar</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>
+										<a href="#"><img alt="" class="img-responsive" src="images/cartpage/cart-product-3.png"></a>
+									</td>
+									<td>
+										<h6><a href="#">Lorem ipsum dolor sit amet,</a></h6>
+									</td>
+									<td>
+										<form id="qua_in" action="action_page.php">
+											<input id="cant1" onchange="changeQuantity(1)" type="number" value="1" name="quantity" min="1" max="5">
+										</form>
+									</td>
+									<td>
+										<div class="cart-price" id="price1">34999</div>
+									</td>
+									<td>
+										<div id="subtotal1" class="cart-subtotal">34999</div>
+									</td>
+									<td><i class="fa fa-trash"></i></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>
+										<a href="#"><img alt="" class="img-responsive" src="images/cartpage/cart-product-2.png"></a>
+									</td>
+									<td>
+										<h6><a href="#">Lorem ipsum dolor sit amet,</a></h6>
+									</td>
+									<td>
+										<form id="qua_in_2" action="action_page.php">
+											<input id="cant2" onchange="changeQuantity(2)" type="number" value="1" name="quantity" min="1" max="10">
+										</form>
+									</td>
+									<td>
+										<div class="cart-price" id="price2">29999</div>
+									</td>
+									<td>
+										<div id="subtotal2" class="cart-subtotal">29999</div>
+									</td>
+									<td><i class="fa fa-trash"></i></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>
+										<a href="#"><img alt="" class="img-responsive" src="images/cartpage/cart-product-1.png"></a>
+									</td>
+									<td>
+										<h6><a href="#">Lorem ipsum dolor sit amet,</a></h6>
+									</td>
+									<td>
+										<form id="qua_in_3" action="action_page.php">
+											<input id="cant3" onchange="changeQuantity(3)" type="number" value="1" name="quantity" min="1" max="5">
+										</form>
+									</td>
+									<td>
+										<div class="cart-price" id="price3">31999</div>
+									</td>
+									<td>
+										<div id="subtotal3" class="cart-subtotal">31999</div>
+									</td>
+									<td><i class="fa fa-trash"></i></td>
+								</tr>
+								<tr id="total_colspan">
+									<td colspan="3" class="text-left"><h5>total</h5></td>
+									<td>
+										<h5 id="totalCant">3</h5>
+										
+									</td>
+									<td ><h5 style="display: inline-block;">$ </h5><h5 id="total" style="display: inline-block;">96997</h5></td>
+									<td colspan="2">
+										<form action="https://checkout.wompi.co/p/" method="GET">
+											<input type="hidden" name="public-key" value="pub_test_501zz4iE1TnIknS0Ob5DEs22JFFVaxYe" />
+											<input type="hidden" name="currency" value="COP" />
+											<input id="totalPay" type="hidden" name="amount-in-cents" value="9699700"/>
+											<input id="reference" type="hidden" name="reference" value="referencia_pago_web_checkout_ejemplo_01" />
+											<input type="hidden" name="redirect-url" value="https://github.com/FabianCristancho/pasarela-de-pagos" />
+											<button class="checkPageBtn" type="submit">COMPRAR AHORA</button>
+										  </form>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+	<!-- Cart-Page-Content-End -->
+	<!-- Footer-Section-Start -->
+	<footer>
+		<div class="footer_top footer-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-sm-6">
+						<div class="newsletter">
+							<h4>Regístrate para recibir información</h4>
+						</div>
+					</div>
+					<div class="col-sm-12 col-sm-6">
+						<div class="newsletter text-right">
+							<input class="news_input" type="text" value="" placeholder="Email Address"/>
+							<input class="subscribe_btn" type="button" value="subscribe"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer_middel footer-padding">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="footer_link address">
+							<p>Elixir fashion</p>
+							<ul>
+								<li><span>Dirección: </span>ipsum 125 Pall Mall, Tunja, Boyacá</li>
+								<li><span>Teléfono: </span>(0123) 345 6789</li>
+								<li><span>Email: </span>bitefashion@gmail.com</li>
+							</ul>
+						</div>
+						<div class="footer_icon">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="footer_link">
+							<p>Mi cuenta</p>
+							<ul>
+								<li><a href="#">Mi cuenta</a></li>
+								<li><a href="cart.html">Carrito de compras</a></li>
+								<li><a href="#">Mi lista de deseos</a></li>
+								<li><a href="#">Mi cuenta de crédito</a></li>
+								<li><a href="#">Información de la cuenta</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="footer_link res_mar">
+							<p>Atención al cliente</p>
+							<ul>
+								<li><a href="#">7/24 de Soporte al cliente</a></li>
+								<li><a href="#">Política de Reembolso</a></li>
+								<li><a href="#">Guía de Compra</a></li>
+								<li><a href="#">Compras Internacionales</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<div class="footer_link res_mar">
+							<p>information</p>
+							<ul>
+								<li><a href="#">Acerca de nuestra tienda</a></li>
+								<li><a href="#">Compra Segura</a></li>
+								<li><a href="#">Información de Domicilio</a></li>
+								<li><a href="#">Ubicación de la compañía</a></li>
+								<li><a href="#">Política de Privacidad</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12">
+						<div class="copyright">
+							<p style="color: rgb(1, 28, 53);">Copyright 2021 <a href="http://designscrazed.org/" style="color: rgb(1, 28, 53);">Ebit fashion</a> Todos los derechos reservados</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12">
+						<div class="copyright_icon text-right">
+							<a href="#"><img src="images/footer/bancolombia.png" alt="" width="100px"/></a>
+							<a href="#"><img src="images/footer/nequi.png" alt="" width="100px"/></a>
+							<a href="#"><img src="images/footer/pse.png" alt="" width="100px"/></a>
+							<a href="#"><img src="images/footer/paypal-5.png" width="70px" alt="" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer-Section-End -->
+	<!-- All js Files Here -->
+	<!-- jquery-1.11.3 -->
+	<script src="js/operation-shop.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+	<!-- revolution js -->
+	<script type="text/javascript" src="lib/rs-plugin/js/jquery.themepunch.tools.min.js"></script>   
+	<script type="text/javascript" src="lib/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	<script src="lib/rs-plugin/rs.home.js"></script>
+	<!-- search-box js -->
+    <script src="js/search-box.js"></script>
+	<!-- scrollUp js -->
+    <script src="js/jquery.scrollUp.js"></script>
+	<!-- mobilemenu js -->
+    <script src="js/jquery.meanmenu.js"></script>
+	<!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
