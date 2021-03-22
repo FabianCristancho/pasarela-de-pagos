@@ -18,7 +18,7 @@ Para hacer uso de la pasarela, Wompi ofrece unos datos de prueba:
 
 ## Previsualización
 
-Se presentan imágenes relacionadas con el ejemplo dado que simula una página web de comercio electrónico. Si desea probar el demo, por favor visite: https://fabiancristancho.github.io/pasarela-de-pagos/
+Se presentan imágenes relacionadas con el ejemplo dado que simula una página web de comercio electrónico. Si desea probar el demo, por favor visite: https://fabiancristancho.github.io/pasarela-de-pagos/cart-web-checkout.html
 
 ### Página principal
 ![Página principal](./images/preview/main_page.PNG)
